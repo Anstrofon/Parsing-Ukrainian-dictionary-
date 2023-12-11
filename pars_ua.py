@@ -18,7 +18,7 @@ while not url.endswith('2381'):
         word = entry_block[i].getText().split(' ')
         word = word[16] # з 16 відступу рядка там починається слово.
 
-        with open('ukrainian_dict(without dublicats).txt', "a", encoding="utf-8") as f:
+        with open('ukrainian_dict.txt', "a", encoding="utf-8") as f:
             f.write(word + '\n')
 
     time.sleep(2)
